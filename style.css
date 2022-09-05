@@ -45,6 +45,11 @@ header .row {
     flex: 1;
 }
 
+.row>* {
+    width: max-content;
+    padding: 0%;
+}
+
 header .logo {
     font-size: 2rem;
     text-decoration: none;
@@ -66,7 +71,7 @@ header .menu-btn {
 }
 
 .menu-btn span {
-    width: 90%;
+    width: 80%;
     height: 5px;
     border-radius: 10px;
     background: #000;
@@ -82,7 +87,7 @@ nav {
     flex: 1;
     width: 100%;
     position: relative;
-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 nav a {
@@ -268,14 +273,17 @@ footer {
 
     header {
         flex-direction: column;
-        /* padding-top: 2vh; */
+        padding-top: 2vh;
+        height: 10vh;
+        overflow: hidden;
     }
 
     nav {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        display: none;
+        /* display: none; */
+       
     }
 
     nav a {
@@ -304,6 +312,9 @@ footer {
 
     .non-active span:nth-child(3) {
         animation: bottom2 0.5s ease forwards;
+    }
+    section h1 {
+        margin-bottom: 1vh;
     }
 
     .products .pdt {
